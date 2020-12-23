@@ -1,0 +1,88 @@
+.wraper{
+
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 300px;
+}
+
+.wraper2 {position: absolute;
+	      bottom: 0;
+	      width: 100%;
+	      height: 250px;}
+
+	
+
+.black-white{
+
+	background-image: url("../img/striped.jpg");
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	position: relative;
+	transition-property: all;
+    transition-duration: 15s;
+    transition-timing-function: linear 0.5s;
+
+
+}
+
+	
+
+
+.box-dogs{
+	 position: absolute;
+	 top: 50%;
+	 left:20%;
+	 width:50%;
+     transform: translate(-50%,-50%) ;
+     background-color: yellow;
+     transition-timing-function: all 0.2s infinite 0.5s;
+     animation: mymove 10s infinite ;
+
+ }
+.box-house{
+	position: absolute;
+	top: 50%;
+	left:75%;
+	width: 50%;
+	transform: translate(-50%,-50%);
+    transition-timing-function: all 0.2s infinite 0.5s;
+    transition-duration:15s;
+    animation: myanimation 10s infinite;
+    
+}
+
+   
+/*hover effects*/
+.box-dogs:hover {
+background-color: red;
+opacity:0.5;
+transition-timing-function:all 0.5s infinite 0.10s;
+
+}
+
+
+.box-house:hover  {
+position: absolute;
+transition-timing-function:all 0.5s infinite 0.10s;
+opacity: 0.5;
+}
+
+@keyframes mymove {
+    
+    75%  {left: :30px; background:red;  }
+
+    0%   {left:0px; background: orange;}
+    25%  { left:50px; background: blue;}
+    50%  { left: 100px; background: pink;}
+    75%  {left: 150px; background: green;}
+    100% { left: 500px; background: red;}
+
+  }
+@keyframes myanimation {
+     0%   {right:0px; background: orange;}
+    25%  { right: 50px; background: red;}
+    50%  { right: 100px; background: pink;}
+    75%  {right:  150px; background: yellow;}
+    100% { right: 500px; background: red;}
